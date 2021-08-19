@@ -1,5 +1,7 @@
 module sorting
 
+import assert_that
+
 fn test_bubble_sort() {
 
   expected := [1, 7, 9, 12, 22, 35]
@@ -7,5 +9,5 @@ fn test_bubble_sort() {
 
   result := bubble_sort(nums)
 
-  assert result == expected
+  assert_that.current(result) // .containsExactly(expected)
 }
