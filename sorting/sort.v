@@ -5,5 +5,5 @@ fn init() {
 }
 
 fn bubble_sort() {
-  
+
 }
