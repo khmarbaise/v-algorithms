@@ -23,9 +23,7 @@ fn bubble_sort<T>(unsorted[]T) []T {
     swapped = false
     for i := 1; i<length; i++ {
         if compare(nums[i], nums[i-1]) < 0 {
-           println('X1: $nums')
            nums[i], nums[i-1] = nums[i-1], nums[i]
-           println('X2: $nums')
            swapped = true
         }
     }
