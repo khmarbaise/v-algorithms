@@ -14,9 +14,16 @@ fn test_different_value() {
   assert are_exactly_the_same(given, expected) == false
 }
 
-fn test_different_size() {
+fn test_different_size_given_larger() {
   expected := [1]
   given := [1,2]
+
+  assert are_exactly_the_same(given, expected) == false
+}
+
+fn test_different_expected_larger() {
+  expected := [1,2]
+  given := [1]
 
   assert are_exactly_the_same(given, expected) == false
 }
