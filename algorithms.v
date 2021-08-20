@@ -6,8 +6,9 @@ fn main() {
   nums := [7, 9, 35, 1, 12, 22]
 
   println('Hello World!')
-  for idx, ie in nums {
-    println('idx:$idx value:$ie')
-  }
-
+  println('Before sorting')
+  println(nums)
+  println('Sorting')
+  result := sorting.bubble_sort(nums)
+  println(result)
 }

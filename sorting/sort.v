@@ -14,7 +14,7 @@ fn compare<T>(a T, b T) int {
 	return 0
 }
 
-fn bubble_sort<T>(unsorted[]T) []T {
+pub fn bubble_sort<T>(unsorted[]T) []T {
  mut nums := unsorted.clone()
 
  mut swapped := false
