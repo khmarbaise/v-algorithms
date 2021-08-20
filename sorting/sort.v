@@ -21,14 +21,16 @@ fn bubble_sort<T>(unsorted[]T) []T {
  mut length := nums.len
  for {
     swapped = false
-    for i := 1; i< length; i++ {
+    for i := 1; i<length; i++ {
         if compare(nums[i], nums[i-1]) < 0 {
+           println('X1: $nums')
            nums[i], nums[i-1] = nums[i-1], nums[i]
+           println('X2: $nums')
            swapped = true
         }
     }
     length--
-    if swapped {
+    if !swapped {
       break
     }
  }
